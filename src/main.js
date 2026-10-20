@@ -675,7 +675,7 @@ error: failed to push some refs to 'https://github.com/neavus-23/Helllo-Secure-W
         <pre class="evidence-terminal evidence-fail">$ npx eslint src/
 
 <span class="hl-yellow">/workspace/src/app.js</span>
-  12:7  <span class="hl-red">error</span>  '${escHtml((finding.message || '').replace("Variable declarada pero no utilizada: '", '').replace("'", ''))}' is defined but never used  <span class="hl-blue">no-unused-vars</span>
+  12:7  <span class="hl-red">error</span>  '${escHtml((finding.message || '').replace(/Variable declarada pero no utilizada: '/g, '').replace(/'/g, ''))}' is defined but never used  <span class="hl-blue">no-unused-vars</span>
 
 <span class="hl-red">✖ 1 problem (1 error, 0 warnings)</span>
 
